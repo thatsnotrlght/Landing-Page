@@ -5,6 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Landing Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -12,15 +15,15 @@
         <div class="left-header">
             <div class="logo">Header Logo</div>
         </div>
-            <div class="links">
-                <ul>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Store</a></li>
-                    <li><a href="#">Settings</a></li>
-                </ul>
-            </div>
+        <div class="links">
+            <ul>
+                <li><a href="#section1">About</a></li>
+                <li><a href="#section2">Products</a></li>
+                <li><a href="#section3">Quote</a></li>
+            </ul>
+        </div>
     </div>
-    <section>
+    <section id="section1">
         <main class="one">
             <div class="main-content">
                 <h1>This website is awesome</h1>
@@ -31,32 +34,67 @@
         </main>
     </section>
 
-    <section>
+    <section id="section2">
         <div class="two">
             <div class="information-header">
                 <h1>Some random information</h1>
             </div>
                 <div class="image-container">
                     <div class="image">
-                        <img src="./images/img_snow.jpg" alt="box" class="img-1">
+                        <img src="./images/spoon.jpg" alt="box" class="img-1">
+                        <figcaption>The spoon, made of a variety of materials including metal and wood, is a small oval or round shallow bowl at the end of a handle, commonly used for measuring and delivering food to the tongue.</figcaption>
+                    </div>
+                    <div class="image">
+                        <img src="./images/fork2.jpg" alt="box" class="img-2">
                         <figcaption>this is some subtext under an illustration or image</figcaption>
                     </div>
                     <div class="image">
-                        <img src="./images/pug.jpeg" alt="box" class="img-2">
+                        <img src="./images/knife.jpg" alt="box" class="img-3">
                         <figcaption>this is some subtext under an illustration or image</figcaption>
                     </div>
                     <div class="image">
-                        <img src="./images/pug.jpeg" alt="box" class="img-3">
-                        <figcaption>this is some subtext under an illustration or image</figcaption>
-                    </div>
-                    <div class="image">
-                        <img src="./images/pug.jpeg" alt="box" class="img-4">
+                        <img src="./images/utensils.jpg" alt="box" class="img-4">
                         <figcaption>this is some subtext under an illustration or image</figcaption>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+
+    <section class="quote-section" id="section3">
+        <div class="spacing">
+            <div class="quote">
+                <p>I have no reason to hate those beneath me. All I feel for them is pity.</p>
+            </div>
+    
+            <div class="author">
+                <p>-Lion Sin of Pride, Seven Deadly Google Slides</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="call-section">
+        <div class="call-box">
+            <div class="call-head">
+                <h1>Call to action! Its time!</h1>
+                <p>Sign up for our product by clicking that button right over there!</p>
+            </div>
+            <button class="call-button">Sign up</button>
+        </div>
+    </section>
+
+    <footer>Not really Copyrighted @ The Odin Project 2022</footer>
+
+
+    <!-- <section class="call-action">
+        <inner-column>
+            <h2>Call to action! It's time!</h2>
+            <p>Sign up for our product by clicking that button right over there!</p>
+            <button-container>
+                <button class="call-button">Sign up</button>
+            </button-container>
+        </inner-column>
+    </section> -->
 
 </body>
 </html>

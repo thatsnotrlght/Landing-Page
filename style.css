@@ -5,7 +5,7 @@
 }
 
 body {
-    font-family: Roboto, sans-serif;
+    font-family: 'Edu VIC WA NT Beginner', cursive;
     color:#ffffff;
     display:flex;
     flex-direction: column;
@@ -13,16 +13,16 @@ body {
 
 
 .header {
-    background-color: #1f2937;
+    background-color: rgb(31, 41, 55);
     display:flex;
     justify-content: space-between;
     align-items: center;
     padding:24px;
-    transition: background-color 2s ease-out;
+    transition: background-color 1.7s ease-out;
 }
 
-.header:hover {
-    background-color: red;
+.header:hover, main.one:hover {
+    background-color: rgb(31, 41, 50);
 }
 
 .left-header {
@@ -44,6 +44,15 @@ ul {
     flex-wrap:nowrap;
 }
 
+#section2 {
+    background-color: white;
+    transition: background-color 1.7s ease-out;
+}
+
+#section2:hover {
+    background-color: hsl(0, 0%, 96%);
+}
+
 main.one {
     background-color: #1f2937;
     display:flex;
@@ -51,6 +60,7 @@ main.one {
     align-items: center;
     padding: 64px;
     padding-bottom: 100px;
+    transition: background-color 2s ease-out;
 }
 
 div h1 {
@@ -78,7 +88,8 @@ img.main-img {
     flex-shrink: 1;
 }
 
-button.signup-1 {
+button.signup-1,
+button.call-button {
     padding: 8px 26px;
     background-color: #3882f6;
     color:#ffffff;
@@ -135,12 +146,13 @@ div.information-header>h1 {
 .img-1 {
     border-radius: 15%;
     border:4px solid salmon;
+}
+
+.img-1:hover, .img-2:hover, .img-3:hover, .img-4:hover {
+    transform: scale(1.10);
     transition: transform .2s; 
 }
 
-.img-1:hover {
-    transform: scale(1.10);
-}
 
 .img-2 {
     border-radius: 15%;
@@ -162,5 +174,113 @@ figcaption {
     color:#1f2937;
     width:200px;
     text-align: center;
+    font-family: 'Edu VIC WA NT Beginner', cursive;
 }
 
+.quote p {
+    color:#1f2937;
+    font-size: 36px;
+    width:550px;
+    font-weight: lighter;
+}
+
+.author p {
+    color: #6c757d;
+    font-size: 16px;
+    font-weight: 600;
+    width: 480px;
+    height:30px;
+    display:flex;
+    justify-content: flex-end;
+}
+.quote-section {
+    background-color: #e5e7e5;
+    height: 400px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-shrink:1;
+}
+
+.spacing {
+    width: 600px;
+    height: 300px;
+    /* border: 10px solid salmon; */
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.call-action {
+    border: 4px solid lime;
+    min-height: 125px;
+    display:flex;
+    justify-content: center;
+}
+
+inner-column {
+    display:block;
+    min-width: 800px;
+    border: 4px solid orange;
+    padding:100px;
+    background-color: #3882f6;
+    border-radius: 8%;
+}
+
+inner-column h2 {
+    display:inline-block;
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
+}
+
+inner-column p {
+    display: inline-block;
+}
+
+.call-section {
+    min-height: 20.5%;
+    padding-top: 50px;
+}
+
+.call-box {
+    width: 50%;
+    min-height: 100px;
+    margin-right:auto;
+    margin-left:auto;
+    background-color: #3882f6;
+    border-radius: 20px;
+    display:flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 50px;
+    padding: 20px;
+}
+
+button.call-button {
+    display:flex;
+    align-self: center;
+    border:1px solid white;
+    /* margin-left: 40px; */
+}
+
+div.call-head h1 {
+    font-size: 24px;
+    }
+div.call-head p {
+    font-size: 12px;
+}
+
+footer {
+    background-color: #1f2937;
+    padding:30px;
+    display:flex;
+    justify-content: center;
+}
+
+/* body * {
+    border: 1px solid blue;
+    padding:2px;
+} */
